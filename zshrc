@@ -103,4 +103,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # autojump
-. /usr/share/autojump/autojump.sh
+# . /usr/share/autojump/autojump.sh

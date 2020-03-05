@@ -7,9 +7,13 @@ clear_all(){
 
 apt_run(){
     apt update  # update
+    apt install curl  # install curl
     apt install htop  # install htop
     apt install vim  # install vim
-    apt install autojump  # install autojump
+    apt install tmux  # install tmux
+    # apt install autojump  # install autojump
+    apt install build-essential
+    apt install cmake
     apt install zsh  # install zsh
 }
 
@@ -65,4 +69,11 @@ install(){
     check_oh_my_zsh
 }
 
-install
+
+if [ "$1" = "install" ]; then
+    install
+elif [ "$1" = "apt" ]; then
+    apt_run
+else
+    echo 'usage: ./vim_plugin.sh (install|apt)'
+fi

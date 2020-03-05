@@ -108,8 +108,8 @@ let g:autopep8_max_line_length=100
 " Ctrl+p 快速搜索
 
 " ===== Plugin 'vim-syntastic/syntastic' =====
-" let g:syntastic_python_python_exe = '/usr/local/python-3.6.5/bin/python3'
-let g:syntastic_python_python_exe = '/usr/bin/python2.7'
+let g:syntastic_python_python_exe = '/usr/bin/python3'
+" let g:syntastic_python_python_exe = '/usr/bin/python2.7'
 map <F5> :SyntasticToggleMode<CR> :SyntasticCheck<CR>
 let g:syntastic_python_checkers = ['flake8']
 set statusline+=%#warningmsg#
@@ -127,8 +127,8 @@ let g:indentLine_enabled = 1
 
 " ===== Plugin 'Valloric/YouCompleteMe' =====
 " YouCompleteMe 功能
-" let g:ycm_python_binary_path = '/usr/local/python-3.6.5/bin/python3'
-let g:ycm_python_binary_path = '/usr/bin/python2.7'
+let g:ycm_python_binary_path = '/usr/bin/python3'
+" let g:ycm_python_binary_path = '/usr/bin/python2.7'
 " 补全功能在注释中同样有效
 let g:ycm_complete_in_comments=1
 " 允许 vim 加载 .ycm_extra_conf.py 文件，不再提示
